@@ -51,6 +51,15 @@ const SearchButton = styled.button`
   }
 `
 
+interface forcastDaily {
+  temp: { day: number };
+  weather: {
+    icon: string;
+    main: string;
+  }[];
+  dt: number;
+}
+
 interface WeatherInfo {
   date: string;
   cityName: string;
@@ -59,7 +68,7 @@ interface WeatherInfo {
   temp_min: number;
   description: string;
   icon: string;
-  forecastDaily: any[]; 
+  forecastDaily: forcastDaily[]; 
 }
 
 

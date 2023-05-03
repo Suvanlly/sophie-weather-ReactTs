@@ -93,12 +93,12 @@ type WeatherType = {
   temp_max: number;
   icon: string;
   forecastDaily: Array<{
-    temp: { day: any };
+    temp: { day: number };
     weather: {
-      icon: any;
-      main: any;
+      icon: string;
+      main: string;
     }[];
-    dt: any;
+    dt: number;
   }>;
 };
 

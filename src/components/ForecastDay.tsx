@@ -33,7 +33,7 @@ const SmallLabel = styled.h4`
   padding: 5px 0;
 `;
 
-const ForecastDay = (props: { temp: number; icon: any; main: any; date: any }) => {
+const ForecastDay = (props: { temp: number; icon: string; main: string; date: number }) => {
   const { temp, icon, main, date } = props;
   // console.log(date);
   const iconURL = `http://openweathermap.org/img/wn/${icon}@2x.png`;
